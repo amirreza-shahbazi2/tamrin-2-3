@@ -4,27 +4,17 @@ using namespace std;
 
 int main()
 {
-    int a,b, ma ,kmm ;
-    cout << "enter a number:" ;
-    cin >> a ;
-    cout <<"enter a number:" ;
-    cin>> b ;
-
-    if(a<b)
-    {ma = b;}
-      else
-        {ma=a;}
-
-    while(true)
+  int a,b,t ;
+  cout <<" enter a number:" ;
+  cin>> a ;
+  cout << "enter a number:" ;
+  cin >> b ;
+  while (b!=0)
 {
-    if (ma%a==0&&ma%b==0)
-    {
-      kmm= ma;
-      break; }
-     else
-         ma++;
-
+    t=b;
+    b=a%b;
+    a=t;
 }
-    cout <<kmm;
+   cout <<t ;
     return 0;
 }
